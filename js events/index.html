@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Events</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <div class="card" onmouseout="hideBtn()" onmouseover="showBtn()"> -->
+        <div class="container">
+        <div class="card">
+        <img src="https://source.unsplash.com/1600x900/?github" alt="" class="img-fluid">
+        <div id="alert-success" class="alert-success-hide">
+            Registration is successful!
+        </div>
+        <div id="alert-danger" class="alert-danger-hide">
+            Please fill all the fields!
+        </div>
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis odit quo harum veritatis possimus!</p>
+        <button id="btn" class="btn" onclick="showForm()">Register Now</button>
+        <div id="registration-form" class="registration-form-hide">
+            <input type="text" placeholder="Your Name" id="name" onkeydown="showName()">
+            <input type="email" placeholder="Your Email" id="email">
+            <button onclick="register()" class="btn-submit">Register Now</button>
+        </div>
+    </div>
+    <div class="user-registrations">
+        <div class="">
+            <h1>Registered Users</h1>
+            <table class="table" border="">
+                <tr class="tr">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>jhon@gmail.com</td> 
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John Doe</td>
+                    <td>jhon@gmail.com</td> 
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>John Doe</td>
+                    <td>jhon@gmail.com</td> 
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>John Doe</td>
+                    <td>jhon@gmail.com</td> 
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+    <h1 id="nameDetails"></h1>
+
+
+    <!-- <button onclick="clickEvent()">Click Event</button> -->
+
+    <script src="./app.js"></script>
+</body>
+</html>

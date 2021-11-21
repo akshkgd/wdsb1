@@ -1,0 +1,14 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    text-align: center;
+}
+#counter{
+    font-size: 120px;
+    font-weight: bolder;
+    color: blueviolet
+}
